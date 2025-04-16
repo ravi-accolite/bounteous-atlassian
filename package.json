@@ -1,0 +1,37 @@
+{
+  "name": "bounteous-atlassian",
+  "version": "1.0.0",
+  "description": "MCP server implementation for Atlassian (Confluence and Jira) integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-esm src/index.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "mcp",
+    "atlassian",
+    "jira",
+    "confluence",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "atlassian-jwt": "^2.0.2",
+    "dotenv": "^16.0.3",
+    "jira-client": "^8.2.2",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
